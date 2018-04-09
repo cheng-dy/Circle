@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_mtopimg"
+            android:layout_width="fill_parent"
+            android:layout_height="180dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/m_top_img" />
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="117dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/h4" />
+
+        <TextView
+            android:id="@+id/host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_mtopimg"
+            android:layout_alignEnd="@+id/header"
+            android:layout_marginEnd="80dp"
+            android:text="小王的家长"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+    <include layout="@layout/top"></include>
+    <Button
+        android:id="@+id/master"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:background="#57c2f0"
+        android:text="班主任"
+        android:textColor="#ffffff"
+        />
+    <Button
+        android:id="@+id/teacher"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:background="#57c2f0"
+        android:text="任课老师"
+        android:textColor="#ffffff"
+        />
+    <Button
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:background="#57c2f0"
+        android:text="家长"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>
