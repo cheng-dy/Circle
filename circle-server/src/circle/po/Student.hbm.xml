@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/HibernateMappingDTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="circle.po.Student" table="student" catalog="class_circle">
+		<id name="childID" type="long">
+			<column name="childID" />
+			<generator class="increment" />
+		</id>
+		<property name="classID" type="java.lang.Long">
+			<column name="classID"/>
+		</property>
+		<property name="name" type="string">
+			<column name="name" length="20"/>
+		</property>
+		<property name="sex" type="java.lang.Boolean">
+			<column name="sex" />
+		</property>
+	</class>
+</hibernate-mapping>

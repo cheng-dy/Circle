@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+	<package name="Actions" extends="struts-default,json-default"
+		namespace="/">
+		<action name="user_*" class="circle.action.UserAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">json</param>
+			</result>
+			<allowed-methods>login,register_p,register_t,register_m,uploadImg,getDynamics,getNotices,publishDynamic,addPraise,publishComment,publishNotice,updateClass,delUser,getAllUsers,delDynamic</allowed-methods>
+		</action>
+		<action name="upload" class="circle.action.UserAction" method="upload">
+			<result>UploadServlet.do</result>
+		</action>
+	</package>
+</struts>    

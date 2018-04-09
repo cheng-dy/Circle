@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/HibernateMappingDTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+		<class name="circle.po.User" table="user" catalog="class_circle">
+		<id name="userID" type="long">
+			<column name="userID" />
+			<generator class="increment" />
+		</id>
+		<property name="username" type="string">
+			<column name="username" length="30"/>
+		</property>
+		<property name="phoneNumber" type="string">
+			<column name="phoneNumber" length="11"/>
+		</property>
+		<property name="password" type="string">
+			<column name="password" length="12"/>
+		</property>
+		<property name="characters" type="string">
+			<column name="characters" length="10"/>
+		</property>
+		<property name="childName" type="string">
+			<column name="childName" length="20"/>
+		</property>
+		<property name="classID" type="java.lang.Long">
+			<column name="classID" />
+		</property>
+		<property name="headerImg" type="string">
+			<column name="headerImg" length="50"/>
+		</property>
+	</class>
+</hibernate-mapping>

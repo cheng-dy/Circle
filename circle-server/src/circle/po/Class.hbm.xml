@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/HibernateMappingDTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="circle.po.Class" table="class" catalog="class_circle">
+		<id name="code" type="long">
+			<column name="code" />
+			<generator class="increment" />
+		</id>
+		<property name="school" type="string">
+			<column name="school" length="50"/>
+		</property>
+		<property name="className" type="string">
+			<column name="className" length="40" />
+		</property>
+	</class>
+</hibernate-mapping>

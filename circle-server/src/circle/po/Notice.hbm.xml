@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/HibernateMappingDTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="circle.po.Notice" table="notice" catalog="class_circle">
+		<id name="noticeID" type="long">
+			<column name="noticeID" />
+			<generator class="increment" />
+		</id>
+		<property name="content" type="string">
+			<column name="content"/>
+		</property>
+		<property name="time" type="date">
+			<column name="time" />
+		</property>
+		<property name="classID" type="java.lang.Long">
+			<column name="classID" />
+		</property>
+	</class>
+</hibernate-mapping>

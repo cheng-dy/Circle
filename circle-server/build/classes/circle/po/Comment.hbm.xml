@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/HibernateMappingDTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="circle.po.Comment" table="comment" catalog="class_circle">
+		<id name="commentID" type="long">
+			<column name="commentID" />
+			<generator class="increment" />
+		</id>
+		<property name="dynamicID" type="java.lang.Long">
+			<column name="dynamicID"/>
+		</property>
+		<property name="time" type="date">
+			<column name="time" />
+		</property>
+		<property name="content" type="string">
+			<column name="content" />
+		</property>
+		<property name="userID" type="java.lang.Long">
+			<column name="userID" />
+		</property>
+	</class>
+</hibernate-mapping>
